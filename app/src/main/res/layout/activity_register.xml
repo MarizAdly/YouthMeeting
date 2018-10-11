@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterActivity"
+    android:background="@drawable/base"
+    android:orientation="vertical"
+    android:alpha="0.8">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:layout_margin="10dp"
+                android:text="Create Account"
+                android:textColor="#f00000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:drawingCacheQuality="auto"
+                android:scaleType="centerCrop"
+                android:src="@drawable/facebook_avatar"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/uploadView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:onClick="addImg"
+                android:text="Upload Photo"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/userNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:alpha="0.6"
+                android:background="@drawable/squircle_btn"
+                android:backgroundTint="#DE1515"
+                android:hint="Full name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="#ffff"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/emailAddEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:alpha="0.6"
+                android:background="@drawable/squircle_btn"
+                android:backgroundTint="#DE1515"
+                android:hint="Email Address"
+                android:inputType="textWebEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="#ffff"
+                android:textSize="20dp" />
+
+
+
+            <EditText
+                android:id="@+id/passWordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:alpha="0.6"
+                android:background="@drawable/squircle_btn"
+                android:backgroundTint="#DE1515"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="#ffff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/phoneNoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:alpha="0.6"
+                android:background="@drawable/squircle_btn"
+                android:backgroundTint="#DE1515"
+                android:hint="Phone No."
+                android:paddingLeft="10dp"
+                android:inputType="phone"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="#ffff"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/bdEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:alpha="0.6"
+                android:background="@drawable/squircle_btn"
+                android:hint="Birth Date"
+                android:inputType="date"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="#ffff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/addressEdit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:alpha="0.6"
+                android:background="@drawable/squircle_btn"
+                android:backgroundTint="#DE1515"
+                android:paddingLeft="10dp"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="#ffff"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/homeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+
+                android:onClick="getLocation"
+                android:text="Get Home Location"
+                android:textColor="#FBF9F9"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="15dp"/>
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/squirclebtn2"
+
+                android:onClick="signup"
+                android:text="Sign Up"
+                android:textColor="#FBF9F9"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/logIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="back"
+                android:text="Already had an account? Log in!"
+                android:textAlignment="center"
+                android:textColor="#f000"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

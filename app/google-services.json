@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "642834165943",
+    "firebase_url": "https://youthmeeting-d672f.firebaseio.com",
+    "project_id": "youthmeeting-d672f",
+    "storage_bucket": "youthmeeting-d672f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642834165943:android:5711713a9b7f9d43",
+        "android_client_info": {
+          "package_name": "com.example.mariz.youthmeeting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642834165943-me9784osi7jtcdn0f15boucp0q3rso5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mariz.youthmeeting",
+            "certificate_hash": "9d9d19a24342f9f72a0ef747a803093040e53bc4"
+          }
+        },
+        {
+          "client_id": "642834165943-q4e00ugkc70h5bktl01ri18cq74237fc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOSNjkAZHbbEkQXlsowSn4CcFHFae3mtQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642834165943-q4e00ugkc70h5bktl01ri18cq74237fc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
